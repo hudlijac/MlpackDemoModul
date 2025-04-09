@@ -216,7 +216,7 @@ All C++ source codes can be compiled as C++17 code. In addition, the following l
 
 -unirec++
 
-For Python codes (for training models for ScikitMlClassifier), the following libraries are needed:
+For Python codes (training models for ScikitMlClassifier), the following libraries are needed:
 
 -pandas
 
