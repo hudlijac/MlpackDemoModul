@@ -1,0 +1,3 @@
+minLeafSize	10
+minGainSplit	1e-7
+maxDepth	3

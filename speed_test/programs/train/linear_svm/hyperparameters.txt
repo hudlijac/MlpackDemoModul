@@ -1,0 +1,4 @@
+optimizer	L_BFGS (Mlpack), SMO(Scikit)-nenašel jsem stejné optimizers
+lambda		0.0
+delta		1.0
+fitIntercept	false

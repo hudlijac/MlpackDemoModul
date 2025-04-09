@@ -1,0 +1,4 @@
+numTrees	2
+minLeafSize	1
+minGainSplit	1e-7
+maxDepth	3
