@@ -1,0 +1,5 @@
+			successProbability	maxSamples	checkInterval	minSamples
+výchozí			0,95			0		100		100
+rychlejší split		0,9			1000		50		75
+opatrnější model	0,99			5000		500		300
+kompromis		0,92			2000		100		150
