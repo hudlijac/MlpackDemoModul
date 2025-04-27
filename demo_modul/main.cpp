@@ -97,7 +97,7 @@ void mainLoop(MlpackClassifier &classifier, UnirecInputInterface &inputIfc,
                                packets_rev_per_second);
 
       // Classification
-      bool isAnomally =
+      bool isProxy =
           (classifier.classify(flowFeatures).get<std::vector<double>>()[0] <
            0.5); // change conversion of classify result to bool representation
                  // according to which data type classify method returns.
@@ -105,8 +105,8 @@ void mainLoop(MlpackClassifier &classifier, UnirecInputInterface &inputIfc,
       // Send result
       auto outputRecord = outputIfc.createUnirecRecord();
 
-      outputRecord.setFieldFromType<bool>(isAnomally,
-                                          ur_get_id_by_name("ANOMALLY"));
+      outputRecord.setFieldFromType<bool>(isProxy,
+                                          ur_get_id_by_name("PROXY"));
       outputIfc.send(outputRecord);
     } catch (EoFException) {
       break;
